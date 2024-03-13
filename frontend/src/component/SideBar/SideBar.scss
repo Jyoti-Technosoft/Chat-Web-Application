@@ -1,0 +1,44 @@
+.sidebar-list {
+  list-style-type: none;
+  position: relative;
+  left: -17px;
+  margin: 28px 0px 10px 0px;
+
+  .sidebar-icon {
+    cursor: pointer;
+  }
+}
+
+.pop-over {
+  padding: 10px 20px;
+}
+
+@media only screen and (max-width: 850px) {
+  .sidebar-header {
+    flex-direction: row !important;
+
+    .sidebar-items {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-bottom: 0px;
+
+      .sidebar-list {
+        margin-right: 65px;
+        margin: auto;
+      }
+    }
+
+    .sidebar-items2 {
+      display: none;
+    }
+
+    .setting-icon {
+      display: none;
+    }
+
+    .setting-icon2 {
+      display: block !important;
+    }
+  }
+}

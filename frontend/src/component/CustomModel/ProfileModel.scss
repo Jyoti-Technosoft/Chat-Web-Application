@@ -1,0 +1,65 @@
+@import '../../variable';
+
+$secondary: #ffffff;
+
+.profile-model-div {
+
+  .profile-modal-header {
+    background-color: #2e2e2e;
+    // background-image: url('../../assets/images/user-profile-background.jpg');
+
+    .user-icon-div {
+
+      .user-img {
+        width: 6em;
+        height: 6em;
+        border-radius: 50%;
+        background-color: $user-icon;
+        border: 5px solid #f8f8f8;
+
+        .first-char-text {
+          color: $user-icon-secondary;
+        }
+
+        .online-circle {
+          border: 2px solid white;
+          position: absolute;
+          width: 14px;
+          height: 14px;
+          border-radius: 50%;
+          bottom: 5px;
+          right: 3px;
+          background: green;
+        }
+      }
+
+      .join {
+        font-size: 14px;
+        color: #3e3c3c;
+        font-weight: bold;
+      }
+
+      .date {
+        background-color: #ccc;
+      }
+    }
+
+  }
+
+  .profile-modal-body {
+    .my-user-list {
+      list-style: none;
+    }
+
+    .label {
+      font-size: 12px;
+    }
+  }
+
+  .close-txt {
+    color: #4eac6d;
+  }
+
+
+
+}

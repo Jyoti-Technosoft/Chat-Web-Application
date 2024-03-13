@@ -1,0 +1,124 @@
+@import "variable";
+
+.web-box {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 0px;
+  margin-left: 0px;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  overflow: hidden;
+  background-color: $primary;
+}
+
+.scrollbar {
+  overflow-y: scroll;
+  max-height: 100vh;
+}
+
+.sidebar {
+  background-color: #2e2e2e;
+  height: 100vh;
+  width: 4em;
+  display: block;
+}
+
+.user-list {
+  padding-left: 3em;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: var(--primary-color);
+  height: 100vh;
+  width: 21em;
+}
+
+.dark-user-list {
+  padding-left: 3em;
+  padding-left: 20px;
+  padding-right: 10px;
+  background-color: $user-list-bg-dark;
+  height: 100vh;
+  width: 21em;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  display: none;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+html::-moz-scrollbar {
+  display: none;
+}
+
+html::-moz-scrollbar-thumb {
+  display: none;
+}
+
+.user-chat {
+  width: calc(100vw - 25em);
+  overflow: hidden;
+  background-image: url("https://themesbrand.com/doot/layouts/assets/images/bg-pattern/pattern-05.png");
+  background-color: var(--first);
+}
+
+.user-chat2 {
+  width: calc(100vw - 25em);
+  padding-right: 0px;
+  overflow-x: hidden;
+  background-image: url("https://themesbrand.com/doot/layouts/assets/images/bg-pattern/pattern-05.png");
+}
+
+@media only screen and (max-width: 850px) {
+  .list-on {
+    width: 100vw;
+  }
+
+  .list-off {
+    display: none;
+  }
+
+  .chat-on {
+    width: 100vw;
+    margin: 0;
+  }
+
+  .chat-off {
+    display: none;
+  }
+
+  .sidebar {
+    position: fixed;
+    bottom: 0;
+    height: 4em;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .show-sidebar {
+    display: block;
+  }
+
+  .hide-sidebar {
+    display: none;
+  }
+}

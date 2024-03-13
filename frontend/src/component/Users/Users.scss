@@ -1,0 +1,89 @@
+@import "../../variable";
+
+$primary: white;
+
+.single-user-details {
+  background-color: transparent;
+  border: none;
+
+  .card-body {
+    display: flex;
+    justify-content: space-between;
+
+    .user-details-card {
+      .user-img {
+        width: 2.2em;
+        height: 2.2em;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $user-icon;
+        position: relative;
+
+        .first-char-text {
+          font-size: 15px;
+          color: $user-icon-secondary;
+          margin-bottom: 0px;
+        }
+
+        .online-circle {
+          border: 2px solid white;
+          position: absolute;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+          bottom: 5px;
+          right: -3px;
+        }
+      }
+
+      .user-div {
+        .user-name {
+          color: var(--text);
+        }
+
+        .user-msg {
+          margin-left: 1em;
+          color: rgb(102, 100, 100);
+        }
+      }
+    }
+
+    .card-details-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .card-msg {
+      .card-text {
+        margin-left: 15px;
+        opacity: 0.7;
+      }
+
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        padding: 5px 5px;
+      }
+
+      .notification {
+        background-color: lightblue;
+        width: 1.5em;
+        height: 1.5em;
+        border-radius: 50%;
+        margin-right: 0.5em;
+      }
+    }
+  }
+}
+
+.active-user {
+  background-color: #4eac6d;
+  margin-right: 10px;
+
+  .user-name {
+    color: #ffffff;
+  }
+}

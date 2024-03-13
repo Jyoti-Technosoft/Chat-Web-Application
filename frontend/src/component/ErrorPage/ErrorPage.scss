@@ -1,0 +1,13 @@
+$body-background-color: #f7f9fb;
+
+.error-page-div {
+  background-color: $body-background-color;
+}
+
+@media screen and (max-width: 800px) {
+  .error-page-div {
+    .error-page-img {
+      width: 100vw !important;
+    }
+  }
+}

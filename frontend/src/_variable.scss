@@ -1,0 +1,28 @@
+$primary: white;
+$user-icon: #8dcfa3;
+$user-icon-secondary: #ffffff;
+
+$user-list-bg: #fafafa;
+$user-list-bg-dark: #262626;
+
+$my-conversation: rgba(78, 172, 109, 0.6);
+$my-conversation-secondary: #000000;
+
+$other-conversation: #ebf1f7;
+$other-conversation-secondary: #000000;
+
+$dark-theme-primary: #383838;
+
+:root {
+  --primary-color: #fafafa;
+  --secondary: #ebf1f7;
+  --first: #ffffff;
+  --text: #000000;
+}
+
+body.dark-theme {
+  --primary-color: #262626;
+  --secondary: #383838;
+  --first: #2e2e2e;
+  --text: #ffffff;
+}

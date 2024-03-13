@@ -1,0 +1,111 @@
+@import "../../variable";
+
+@keyframes myanimation {
+  0% {
+    right: 80px;
+  }
+
+  50% {
+    right: 0px;
+  }
+}
+
+@keyframes otheranimation {
+  0% {
+    left: 80px;
+  }
+
+  50% {
+    left: 0px;
+  }
+}
+
+.other-message {
+  .other-message-box:last-child {
+    animation: otheranimation 0.5s ease-in-out;
+  }
+
+  .other-message-box {
+    width: fit-content;
+    max-width: 65%;
+    margin: 1em 0 1em 2.5em !important;
+    border: none;
+
+    .message {
+      border-radius: 0.5em;
+
+      .card-text {
+        color: var(--text);
+      }
+    }
+  }
+
+  .other-message-box-bg-light {
+    background-color: var(--secondary);
+  }
+
+  .other-message-box-bg-dark {
+    background-color: #383838;
+  }
+
+  .emoji-other-msg-box {
+    background-color: transparent !important;
+    max-width: 65%;
+    margin-left: 2.5em !important;
+    border: none;
+    animation: otheranimation 0.5s ease-in-out;
+
+    .emoji-other-message {
+      box-shadow: none !important;
+
+      .emoji-other-message-text {
+        font-size: 2em !important;
+      }
+    }
+  }
+}
+
+.my-box-container {
+  .my-message-box:last-child {
+    animation: myanimation 0.5s ease-in-out;
+  }
+
+  .my-message-box {
+    max-width: 65%;
+    margin: 0.5em 2.5em 0.5em 0em !important;
+    background-color: $my-conversation;
+    position: relative;
+
+    .my-message {
+      border-radius: 0.5em;
+
+      .card-text {
+        color: var(--text);
+      }
+    }
+  }
+
+  .emoji-my-msg-box {
+    background-color: transparent !important;
+    max-width: 65%;
+    margin-right: 2.5em !important;
+    animation: myanimation 0.5s ease-in-out;
+
+    .emoji-my-message {
+      box-shadow: none !important;
+      animation: myanimation 0.5s ease-in-out;
+
+      .emoji-my-message-text {
+        font-size: 2em !important;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .other-message {
+    margin-left: -1em;
+  }
+}

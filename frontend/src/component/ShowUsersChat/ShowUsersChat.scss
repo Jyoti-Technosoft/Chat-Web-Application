@@ -1,0 +1,237 @@
+@import "../../variable";
+
+.chat-box-container {
+  .chat-box-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 80px;
+    overflow: hidden;
+    width: calc(100vw - 25em);
+    border-bottom: 1px solid #dfd4d4;
+
+    .header-chat-box {
+      height: 80px;
+
+      .user-details {
+        position: relative;
+        width: -webkit-fill-available;
+        width: -moz-available;
+        z-index: 5;
+        background-color: var(--first);
+        padding: 1em 0.5em 0 0.5em;
+
+        .other-user-icon {
+          width: 3em;
+          height: 3em;
+          border-radius: 50%;
+          background-color: $user-icon;
+
+          .first-char-text {
+            color: $user-icon-secondary;
+          }
+        }
+
+        .other-user-name {
+          position: absolute;
+          top: 1em;
+          left: 4.7em;
+          color: var(--text);
+        }
+
+        .other-user-status {
+          position: absolute;
+          top: 40px;
+          left: 75px;
+          color: rgb(121, 116, 116);
+        }
+
+        .other-user-status-online {
+          position: absolute;
+          top: 40px;
+          left: 89px;
+          color: rgb(121, 116, 116);
+        }
+
+        .status-circle {
+          border: 1px solid white;
+          position: absolute;
+          top: 47px;
+          left: 76px;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background: green;
+        }
+
+        .back-btn {
+          display: none;
+          position: absolute;
+          left: 4px;
+          top: 1.5em;
+
+          .back-btn-img {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+          }
+        }
+
+        hr {
+          opacity: 0.2;
+        }
+
+        .hr-line {
+          color: var(--text);
+        }
+      }
+    }
+  }
+
+  .chat-box-content {
+    position: absolute;
+    top: 80px;
+    bottom: 80px;
+    width: calc(100vw - 25em);
+    right: 0;
+    overflow: auto;
+    max-height: calc(100% - 80px - 80px);
+
+    .message-chat-box {
+      height: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden !important;
+    }
+  }
+
+  .chat-box-footer {
+    position: absolute;
+    bottom: 0;
+    height: 80px;
+    width: calc(100vw - 25em);
+    right: 0;
+    overflow: hidden;
+
+    .input-chat-box {
+      height: 80px;
+      width: inherit;
+      padding-left: 7.5px;
+      position: fixed;
+      bottom: 0;
+      background-color: var(--first);
+
+      .message-div {
+        .message-input {
+          padding: 1em 4em 1em 3em;
+          font-weight: 400;
+          line-height: 1.6;
+          width: 99%;
+          border-radius: 2em;
+          background-color: var(--secondary);
+          color: var(--text);
+          opacity: 0.7;
+        }
+
+        .message-input:focus {
+          border: none;
+          outline: none;
+        }
+
+        .send-btn {
+          right: 1.3em;
+          top: 0.9em;
+          background: transparent;
+
+          .send-btn-img {
+            width: 30px;
+            height: 25px;
+          }
+        }
+
+        .attach-btn {
+          top: 0.9em;
+          left: 1em;
+          background: transparent;
+          cursor: pointer;
+
+          .attach-btn-img {
+            width: 1.2em;
+            height: 1.2em;
+          }
+
+          .active-emoji {
+            display: block;
+          }
+
+          .inactive-emoji {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.emoji-popover {
+  max-width: fit-content;
+  inset: auto auto 13px 165px !important;
+}
+
+@media only screen and (max-width: 850px) {
+  .chat-box-container {
+    .chat-box-header {
+      width: 100vw;
+    }
+
+    .chat-box-content {
+      width: 100vw;
+      max-height: calc(100vh - 80px - 80px);
+    }
+
+    .chat-box-footer {
+      width: 100vw;
+    }
+  }
+
+  .back-btn {
+    display: block !important;
+  }
+
+  .my-box-container {
+    margin-right: -1.4em;
+    padding-bottom: 0.5em !important;
+  }
+
+  .other-user-icon {
+    margin-left: 2em;
+  }
+
+  .other-user-name {
+    left: 6.2em !important;
+  }
+
+  .other-user-status {
+    left: 98px !important;
+  }
+
+  .status-circle {
+    left: 100px !important;
+  }
+
+  .other-user-status-online {
+    left: 114px !important;
+  }
+
+  .emoji-popover {
+    max-width: fit-content;
+    inset: auto auto 0px 0px !important;
+  }
+
+  .attach-btn {
+    display: none;
+  }
+
+  .message-input {
+    padding: 1em 4em 1em 1em !important;
+  }
+}

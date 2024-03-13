@@ -1,0 +1,23 @@
+$base: #4eac6d;
+$secondary: #ffffff;
+
+.custom-model-container {
+  .logout-btn {
+    background-color: $base;
+    padding: 0.5em 1em;
+    border-radius: 0.8em;
+    color: $secondary;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+
+  .cancel-btn {
+    color: $base !important;
+    background-color: $secondary;
+    padding: 0.5em 1em;
+    border-radius: 0.8em;
+    color: $secondary;
+    margin: 0.5em;
+    cursor: pointer;
+  }
+}

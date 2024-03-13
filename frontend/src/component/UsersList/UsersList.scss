@@ -1,0 +1,126 @@
+@import "../../variable";
+
+.users-list-box {
+  .header-user-list {
+    padding-top: 1.5em;
+    height: 12em;
+
+    .user-details-div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .user-details {
+        display: flex;
+        align-items: center;
+
+        .user-dropdown {
+          display: flex;
+          align-items: center;
+
+          .dropdown-toggle::after {
+            content: none;
+          }
+
+          .user-icon-div {
+            text-decoration: none;
+
+            .user-icon {
+              width: 3em;
+              border-radius: 50%;
+              height: 3em;
+              cursor: pointer;
+              background: white;
+            }
+
+            .user-icon-text {
+              width: 3em;
+              border-radius: 50%;
+              height: 3em;
+              cursor: pointer;
+              background-color: $user-icon;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .first-char-text {
+                color: $user-icon-secondary;
+                margin-bottom: 0px;
+                font-size: 1em;
+              }
+            }
+          }
+
+          .user-dropdown-list {
+            cursor: pointer;
+          }
+
+          .item-user-dropdown {
+            text-align: center;
+            color: #2787f5;
+          }
+        }
+
+        .user-name {
+          margin-bottom: 0px;
+          margin-left: 1em;
+          font-weight: 400;
+          color: var(--text);
+        }
+      }
+
+      .three-dot {
+        margin-right: 1em;
+      }
+    }
+
+    .hr-line {
+      margin-right: 0.6em;
+      color: var(--text);
+    }
+
+    .search-box {
+      padding-right: 0.6em;
+
+      .search-box-input {
+        width: 100%;
+        margin: 1em 0;
+        padding: 8px;
+        font-weight: 400;
+        line-height: 1.6;
+        border-radius: 0.5em;
+        border: none;
+        background-color: var(--secondary);
+        color: var(--text);
+        opacity: 0.7;
+      }
+
+      .search-box-input:focus {
+        border: none;
+        outline: none;
+        background-color: var(--secondary);
+      }
+    }
+
+    .recent-chat {
+      color: var(--text);
+    }
+  }
+
+  .user-container-body {
+    .single-user {
+      cursor: pointer;
+    }
+  }
+
+  .custom-scroll-bar {
+    overflow-y: scroll;
+    height: calc(100vh - 12em);
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .custom-scroll-bar {
+    height: calc(100vh - 16em) !important;
+  }
+}

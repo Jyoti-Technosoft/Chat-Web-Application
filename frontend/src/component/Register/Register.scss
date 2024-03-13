@@ -1,0 +1,38 @@
+.register-container {
+  background-color: #4eac6d;
+
+  .img {
+    .register-img {
+      width: -webkit-fill-available;
+      width: -moz-available;
+    }
+  }
+
+  .register-sub-container {
+    background-color: #ffffff;
+    overflow: scroll;
+
+    .register-form-input {
+      border: 1px solid grey;
+    }
+
+    .register-form-input:focus {
+      border: 1px solid grey;
+      outline: none;
+    }
+
+    .register-btn {
+      background-color: #4eac6d;
+    }
+
+    .signup-text {
+      color: #4eac6d;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .img {
+    display: none;
+  }
+}
